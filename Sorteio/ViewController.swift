@@ -17,6 +17,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var legendaResultado: UILabel!
     @IBAction func gerarNumero(_ sender: Any) {
+        
+        var numeroAleatorio = arc4random_uniform( 21)
+        
+        legendaResultado.text = String( numeroAleatorio)
+        
     }
     
     
